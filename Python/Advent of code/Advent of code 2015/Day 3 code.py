@@ -1,7 +1,7 @@
-x=open("All Inputs.txt",'r')
-while x.readline()!='Day 3\n' :
+f=open("All Inputs.txt",'r')
+while f.readline()!='Day 3\n' :
     continue
-a=x.readline()
+a=f.readline()
 b=[(0,0)]
 c=[(0,0)]
 x=0
@@ -33,4 +33,4 @@ for i in range(len(a)-1):#-1 is for new line character
 print('Santa visited',len(set(b)),'houses at least once.')
 print(len(set(c)),'houses were visited by Santa or Robo-Santa at least once.')
 k=input('Press enter to Exit.')
-x.close()
+f.close()
