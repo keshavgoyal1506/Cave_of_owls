@@ -14,13 +14,11 @@ for i in range(1000):
             if len(d)>=3:
                 n+=1
     e=re.findall(r'(\w{2}).*?(\1)',a)
-    if len(e)==1:
+    if len(e)>=1:
         f=re.findall(r'(\w).(\1)',a)
-        print(f)
-    
         if len(f)!=0:
             n2+=1
-    else: print(e)
-    
+
         
-print('The number of nice strings are',n,n2)
+print('The number of nice strings are',n,'for first part and',n2,'for second part.')
+k=input('Press Enter to exit the program.')
